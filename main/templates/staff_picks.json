@@ -1,0 +1,13 @@
+{
+	"staff_picks": [{% for pick in staff_picks %}
+		{
+			"recommender": {{ pick.recommender }},
+			"title": {{ pick.title }},
+			"twitter": {{ pick.twitter }},
+			"episode": {{ pick.episode }},
+			"podcast": {{ pick.podcast }},
+			"link": {{ pick.link }},
+			"description": {{ pick.description }}
+		}{% if not loop.last %},{% endif %}
+	{% endfor %}]
+}
