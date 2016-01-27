@@ -6,6 +6,7 @@
 			"twitter": {{ pick.twitter }},
 			"episode": {{ pick.episode }},
 			"podcast": {{ pick.podcast }},
+			"audio": {{ pick.audio }},
 			"link": {{ pick.link }},
 			"description": {{ pick.description }}
 		}{% if not loop.last %},{% endif %}

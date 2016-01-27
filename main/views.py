@@ -16,6 +16,7 @@ def index():
 	    staff_pick['twitter'] = json.dumps(pick['Twitter'])
 	    staff_pick['episode'] = json.dumps(pick['Episode'])
 	    staff_pick['podcast'] = json.dumps(pick['Podcast'])
+	    staff_pick['audio'] = json.dumps(pick['Audio'])
 	    staff_pick['link'] = json.dumps(pick['Link'])
 	    staff_pick['description'] = json.dumps(pick['Description'])
 	    staff_picks.append(staff_pick)
